@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+
+            font-family: sans-serif;
+            background-size: cover;
+        }
+        ::placeholder{
+            color: black;
+        }
+        .box{
+            width: 400px;
+            padding: 40px;
+            position:absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background:linear-gradient(pink,purple);
+            text-align: center;
+            background: linear-gradient(-45deg, #ee5252, #e628ad, #23a6d5, rgb(87, 243, 14));
+            background-size: 800% 400%;
+            animation: gradient 15s ease infinite;
+            height: 70vh;
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .box h1{
+            color: white;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+        .box input[type="text"],.box input[type="password"],.box input[type="email"]{
+            border: 0;
+            background: none;
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+            border: 2px solid #fff;
+            padding: 14px 10px;
+            width: 200px;
+            outline: none;
+            color:white;
+            border-radius: 24px;
+            transition: 0.25s;
+        }
+        .box input[type="text"]:focus,.box input[type="password"]:focus,.box input[type="email"]:focus{
+            width: 280px;
+            border-color:black;
+
+
+        }
+        .box input[type="submit"]{
+            border: 0;
+            background: none;
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+            border: 2px solid ;
+            padding: 14px 40px;
+            outline: none;
+            color: white;
+            border-radius: 24px;
+            transition: 0.25s;
+            cursor: pointer;
+        }
+        .box input[type="submit"]:hover{
+            background:rgb(46, 193, 252);
+        }
+    </style>
+</head>
+<body>
+<form th:action="@{/user/userRegistration}" class="box" method="post" th:object="${userRegistrationDetails1}">
+    <h1>Register</h1>
+    <h3>Create your account</h3>
+<!--    <input type="text" placeholder=" FirstName" th:field="*{firstName}">-->
+<!--    <input type="text" placeholder="name"  th:field="*{name}">-->
+    <input type="text" placeholder="Name" name="name">
+    <input type="email" placeholder="Email" name="email">
+    <input type="password" placeholder="Password" name="password">
+
+    <input type="checkbox">I accept the Terms of Use and <a href="#"> Privacy Policy</a>.
+    <input type="submit" value="Register Now">
+    <span>Already registered? <a th:href="@{/user/login}">Login here</a></span>
+</form>
+</body>
+</html>

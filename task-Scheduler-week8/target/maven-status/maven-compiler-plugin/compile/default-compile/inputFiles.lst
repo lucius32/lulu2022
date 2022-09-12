@@ -1,0 +1,13 @@
+/Users/administrator/Desktop/WHATEVER/ALL WEEKS!!!!/task-Scheduler-week8/src/main/java/com/lucius/taskscheduler/services/servicesImpl/UserServicesImpl.java
+/Users/administrator/Desktop/WHATEVER/ALL WEEKS!!!!/task-Scheduler-week8/src/main/java/com/lucius/taskscheduler/model/Status.java
+/Users/administrator/Desktop/WHATEVER/ALL WEEKS!!!!/task-Scheduler-week8/src/main/java/com/lucius/taskscheduler/controller/UserController.java
+/Users/administrator/Desktop/WHATEVER/ALL WEEKS!!!!/task-Scheduler-week8/src/main/java/com/lucius/taskscheduler/repository/TaskRepository.java
+/Users/administrator/Desktop/WHATEVER/ALL WEEKS!!!!/task-Scheduler-week8/src/main/java/com/lucius/taskscheduler/TaskSchedulerApplication.java
+/Users/administrator/Desktop/WHATEVER/ALL WEEKS!!!!/task-Scheduler-week8/src/main/java/com/lucius/taskscheduler/dto/UserDTO.java
+/Users/administrator/Desktop/WHATEVER/ALL WEEKS!!!!/task-Scheduler-week8/src/main/java/com/lucius/taskscheduler/exception/TaskNotFoundException.java
+/Users/administrator/Desktop/WHATEVER/ALL WEEKS!!!!/task-Scheduler-week8/src/main/java/com/lucius/taskscheduler/model/Task.java
+/Users/administrator/Desktop/WHATEVER/ALL WEEKS!!!!/task-Scheduler-week8/src/main/java/com/lucius/taskscheduler/repository/UserRepository.java
+/Users/administrator/Desktop/WHATEVER/ALL WEEKS!!!!/task-Scheduler-week8/src/main/java/com/lucius/taskscheduler/dto/TaskDTO.java
+/Users/administrator/Desktop/WHATEVER/ALL WEEKS!!!!/task-Scheduler-week8/src/main/java/com/lucius/taskscheduler/exception/UserNotFoundException.java
+/Users/administrator/Desktop/WHATEVER/ALL WEEKS!!!!/task-Scheduler-week8/src/main/java/com/lucius/taskscheduler/model/User.java
+/Users/administrator/Desktop/WHATEVER/ALL WEEKS!!!!/task-Scheduler-week8/src/main/java/com/lucius/taskscheduler/services/UserServices.java

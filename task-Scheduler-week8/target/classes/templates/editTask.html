@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>To Do List</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+          rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <style>
+        body{
+            background-color: darkgrey;
+        }
+        a {
+            text-decoration: none;
+            color: aliceblue;
+        }
+        a:hover {
+            COLOR: green;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+        <button class="btn btn-secondary">
+            <a th:href="@{/user/dashboard}">Dashboard</a>
+        </button>
+    </div>
+</nav>
+<div class="container" align="center">
+    <div>
+        <h1>Activity Tracker</h1>
+        <hr>
+        <h2>Update Task</h2>
+    </div>
+
+    <form action="#" th:action="@{/user/edit/{id}(id=${singleTask.id})}" th:object="${taskBody}" method="post">
+        <!--        <input type="hidden" th:field="*{s}" />-->
+
+        <div class="mb-3">
+            <input type="text" th:value="${singleTask.title}" name="title" placeholder="Task Name">
+        </div>
+
+        <div class="mb-3">
+            <input type="text" th:value="${singleTask.description}" name="description" placeholder="Task Description">
+        </div>
+
+        <!--        <div class="mb-3">-->
+        <!--            <input type="date" th:field = "*{dueDate}" placeholder="Due Date">-->
+        <!--        </div>-->
+
+        <!--        <div class="mb-3">-->
+        <!--            <label class="form-check-label">-->
+        <!--                Task Completed-->
+        <!--            </label>-->
+        <!--            <input type="checkbox" th:field = "*{completed}" placeholder="Task Completed">-->
+        <!--        </div>-->
+
+        <div class="mb-3">
+            <button type="submit" class="btn btn-primary">Update Task</button>
+            <a th:href="@{/user/dashboard}" type="reset" class="btn btn-outline-info pull-right ml-3">Cancel</a>
+        </div>
+    </form>
+    <hr>
+</div>
+<footer class="container py-5">
+    <div class="row">
+        <div class="col-md-12">
+            <p class="text-muted">&copy; 2022 Delucius Inc. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
